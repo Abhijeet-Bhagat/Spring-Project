@@ -2,8 +2,8 @@ package com.sboot.entity;
 
 public class DTOclass {
 	
-	private String userName;
-	private String crushName;
+	private String userName = "Something";
+	private String crushName = "Something";
 	public String getUserName() {
 		return userName;
 	}

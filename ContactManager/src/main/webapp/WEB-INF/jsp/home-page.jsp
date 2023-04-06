@@ -1,3 +1,4 @@
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -9,25 +10,27 @@
 <body>
 	<h1 align="center">Love Calculator</h1>
 	
-	<form action="result-page" method="get">
+	<form:form action="result-page" method="get" modelAttribute="userdto">
 	<div align="center">
 		<label for="yn">UserName</label>
-		<input type="text" id="yn" name = "userName">
+		<form:input type="text" id="yn" path = "userName" />
 		<br>
 		<br>
 		<label for="cn">CrushName</label>
-		<input type="text" id="cn" name = "crushName">
+		<form:input type="text" id="cn" path = "crushName" />
 		<br>
 		<br>
-		 <label for="checkbox">
+		<!--  <label for="checkbox">
                    <input type="checkbox" name="checkbox" required="required"> Agree that this is for fun!
-         </label>
+         </label> -->
          <br>
          <br>
-         <input type="submit" value="Calculate"/>
+         <!-- <input type="submit" value="Calculate"/> -->
+         
+         <form:button>Calculate</form:button>
 		
 	</div>
-	</form>
+	</form:form>
 	
 </body>
 </html>

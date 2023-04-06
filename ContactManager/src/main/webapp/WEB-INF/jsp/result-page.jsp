@@ -8,7 +8,7 @@
 </head>
 <body>
 	<h1>This is result page</h1>
-	<p>${dto.userName}</p>
+	<p>${userdto.userName}</p>
 	
 </body>
 </html>
