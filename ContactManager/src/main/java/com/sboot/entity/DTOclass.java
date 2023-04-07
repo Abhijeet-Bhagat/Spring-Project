@@ -4,6 +4,8 @@ public class DTOclass {
 	
 	private String userName = "Something";
 	private String crushName = "Something";
+	//String result;
+	
 	public String getUserName() {
 		return userName;
 	}

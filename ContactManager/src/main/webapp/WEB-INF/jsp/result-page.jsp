@@ -4,11 +4,12 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Love Calculator</title>
 </head>
 <body>
 	<h1>This is result page</h1>
 	<p>${userdto.userName}</p>
+	<p>${result}</p>
 	
 </body>
 </html>
